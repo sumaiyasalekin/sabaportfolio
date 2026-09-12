@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Sa<span>ba</span></div>
+        <i class="fa-solid fa-bars menu-icon" id="menuBtn"></i>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, It's <span>Saba</span></h1>
+            <h2>I'm a <span id="changingText">Ui/Ux Designer</span></h2>
+            <p>Crafting intuitive digital experiences, dynamic prototypes, and pixel-perfect interfaces.
+Bridging the gap between user psychology and clean visual design to bring static layouts to life.</p>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <button class="btn">Hire Me</button>
+        </div>
+        <div class="hero-img-container">
+            <img src="IMG_20240522_171500.jpg" alt="Alex Profile Picture" class="hero-img">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container">
+            <div class="service-card highlight">
+                <h3>Graphic Designer</h3>
+                <p>Visual storyteller crafting impactful brand identities, clean layouts, and compelling digital assets.</p>
+            </div>
+            <div class="service-card">
+                <h3>Frontend Development</h3>
+                <p>Bringing static designs to life through clean, responsive code and fluid user interfaces.</p>
+            </div>
+            <div class="service-card highlight">
+                <h3>UI / UX Design</h3>
+                <p>Crafting intuitive digital experiences, dynamic prototypes, and pixel-perfect interfaces.</p>
+            </div>
+            <div class="service-card">
+                <h3>Backend Developer</h3>
+                <p>Architecting secure, scalable server-side systems and robust databases that power seamless applications.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fa-brands fa-figma"></i><p>Figma</p></div>
+            <div class="skill-item"><i class="fa-brands fa-html5"></i><p>HTML5</p></div>
+            <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><p>CSS3</p></div>
+            <div class="skill-item"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+            <div class="skill-item"><i class="fa-brands fa-angular"></i><p>Angular</p></div>
+            <div class="skill-item"><i class="fa-brands fa-wordpress"></i><p>WordPress</p></div>
+            <div class="skill-item"><i class="fa-brands fa-python"></i><p>Python</p></div>
+            <div class="skill-item"><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">My Education</h2>
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>2011 - 2019</h3>
+                    <p>Bogura Govt. Girls' High School</p>
+                    <p>Science</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>2019 - 2021</h3>
+                    <p>Govt. Azizul Haque College</p>
+                    <p>GPA 5.00</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>2022 - 2026</h3>
+                    <p>Daffodil International University</p>
+                    <p>Bachelor's in CSE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" id="portfolioContactForm">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Alex. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
