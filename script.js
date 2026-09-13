@@ -1,52 +1,91 @@
-// Wait for the DOM layout to load fully
+// Wait until the page is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // --- RESPONSIVE MOBILE MENU TOGGLE ---
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
+
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
 
     if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            // Toggle between hamburger icon and close icon
-            menuBtn.classList.toggle('fa-bars');
-            menuBtn.classList.toggle('fa-xmark');
+
+        // Open / close mobile menu
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            // Change hamburger icon to X
+            menuBtn.classList.toggle("fa-bars");
+            menuBtn.classList.toggle("fa-xmark");
         });
 
-        // Close dropdown menu when a nav item link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuBtn.classList.add('fa-bars');
-                menuBtn.classList.remove('fa-xmark');
+        // Close mobile menu when a navigation link is clicked
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("active");
+
+                menuBtn.classList.add("fa-bars");
+                menuBtn.classList.remove("fa-xmark");
             });
         });
     }
 
-    // --- TYPING / SUBHEADING TEXT ROTATION EFFECT ---
+
+    /* =========================================
+       TYPING / ROLE ROTATION
+    ========================================= */
+
     const roles = [
-    "Software Developer",
-    "Frontend Developer",
-    "UI/UX Designer",
-    "AI/ML Enthusiast"
-];
+        "Software Developer",
+        "Frontend Developer",
+        "UI/UX Designer",
+        "AI/ML Enthusiast"
+    ];
+
     let roleIndex = 0;
+
     const textElement = document.getElementById("changingText");
 
     if (textElement) {
+
         setInterval(() => {
+
             roleIndex = (roleIndex + 1) % roles.length;
+
             textElement.textContent = roles[roleIndex];
-        }, 3000); // Transitions every 3 seconds
+
+        }, 3000);
     }
 
-    // --- PREVENT SUBMIT PAGE RELOAD (FOR TESTING) ---
-    const contactForm = document.getElementById('portfolioContactForm');
+
+    /* =========================================
+       CONTACT FORM
+    ========================================= */
+
+    const contactForm = document.getElementById("portfolioContactForm");
+
     if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
+
+        contactForm.addEventListener("submit", (event) => {
+
             event.preventDefault();
-            alert("Message sent successfully! (Demo execution)");
+
+            alert("Thank you for your message! This contact form is currently a demo.");
+
             contactForm.reset();
         });
     }
+
+
+    /* =========================================
+       CURRENT YEAR IN FOOTER
+    ========================================= */
+
+    const yearElement = document.getElementById("currentYear");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
 });
