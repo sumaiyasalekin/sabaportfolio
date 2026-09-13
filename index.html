@@ -1,271 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Saba - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
     <header>
-        <div class="logo">Sa<span>ba</span></div>
+
+        <div class="logo">
+            Sa<span>ba</span>
+        </div>
+
         <i class="fa-solid fa-bars menu-icon" id="menuBtn"></i>
-       <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
     </header>
 
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
     <section class="hero" id="home">
+
         <div class="hero-content">
-            <h1>Hi, It's <span>Saba</span></h1>
-            <h2>I'm a <span id="changingText">Software Developer</span></h2>
-            <p>Computer Science & Engineering graduate combining software engineering, frontend development, AI/ML, and UI/UX design. I enjoy turning ideas into practical, user-friendly digital experiences while continuously learning new technologies.</p>
-            
+
+            <h1>
+                Hi, It's <span>Saba</span>
+            </h1>
+
+            <h2>
+                I'm a
+                <span id="changingText">Software Developer</span>
+            </h2>
+
+            <p>
+                Computer Science & Engineering graduate combining software
+                engineering, frontend development, AI/ML, and UI/UX design.
+                I enjoy turning ideas into practical, user-friendly digital
+                experiences while continuously learning new technologies.
+            </p>
+
+
+            <!-- Social Links -->
             <div class="social-icons">
-               <a href="https://www.linkedin.com/in/sumaiyasalekinsaba/" target="_blank">
-    <i class="fa-brands fa-linkedin-in"></i></a>
 
-<a href="https://github.com/sumaiyasalekin" target="_blank">
-    <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sumaiyasalekinsaba/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
 
-<a href="https://flowcv.com/resume/6mhbf77wq99v" target="_blank">
-    <i class="fa-solid fa-file-lines"></i></a>
+                    <i class="fa-brands fa-linkedin-in"></i>
 
-<a href="https://www.hackerrank.com/profile/eunoiamoonbow" target="_blank">
-    <i class="fa-brands fa-hackerrank"></i></a>
+                </a>
+
+
+                <a href="https://github.com/sumaiyasalekin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="https://flowcv.com/resume/6mhbf77wq99v"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Resume">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                </a>
+
+
+                <a href="https://www.hackerrank.com/profile/eunoiamoonbow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="HackerRank">
+
+                    <i class="fa-brands fa-hackerrank"></i>
+
+                </a>
+
             </div>
 
-            <a href="#contact" class="btn">Hire Me</a>
-<a href="https://flowcv.com/resume/6mhbf77wq99v" target="_blank" class="btn">View Resume</a>
+
+            <!-- Hero Buttons -->
+            <a href="#contact" class="btn">
+                Hire Me
+            </a>
+
+            <a href="https://flowcv.com/resume/6mhbf77wq99v"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn">
+
+                View Resume
+
+            </a>
+
         </div>
+
+
+        <!-- Profile Image -->
         <div class="hero-img-container">
-            <img src="IMG_20240522_171500.jpg" alt="Alex Profile Picture" class="hero-img">
+
+            <img src="IMG_20240522_171500.jpg"
+                alt="Saba - Computer Science and Engineering Graduate"
+                class="hero-img">
+
         </div>
+
     </section>
 
+
+    <!-- =========================
+         SERVICES SECTION
+    ========================== -->
     <section id="services">
-        <h2 class="section-title">Services</h2>
+
+        <h2 class="section-title">
+            Services
+        </h2>
+
         <div class="services-container">
 
-    <div class="service-card highlight">
-        <h3>Frontend Development</h3>
-        <p>Building responsive, interactive, and user-friendly web interfaces using modern frontend technologies.</p>
-    </div>
 
-    <div class="service-card">
-        <h3>UI / UX Design</h3>
-        <p>Designing clean and intuitive digital experiences, wireframes, prototypes, and user interfaces using Figma.</p>
-    </div>
+            <div class="service-card highlight">
 
-    <div class="service-card highlight">
-        <h3>Software Development</h3>
-        <p>Developing practical software solutions using programming, databases, APIs, and application development technologies.</p>
-    </div>
+                <h3>
+                    Frontend Development
+                </h3>
 
-    <div class="service-card">
-        <h3>AI / ML Projects</h3>
-        <p>Exploring machine learning and data-driven solutions to solve real-world problems through software.</p>
-    </div>
+                <p>
+                    Building responsive, interactive, and user-friendly
+                    web interfaces using modern frontend technologies.
+                </p>
 
-</div>
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    UI / UX Design
+                </h3>
+
+                <p>
+                    Designing clean and intuitive digital experiences,
+                    wireframes, prototypes, and user interfaces using Figma.
+                </p>
+
+            </div>
+
+
+            <div class="service-card highlight">
+
+                <h3>
+                    Software Development
+                </h3>
+
+                <p>
+                    Developing practical software solutions using programming,
+                    databases, APIs, and application development technologies.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    AI / ML Projects
+                </h3>
+
+                <p>
+                    Exploring machine learning and data-driven solutions
+                    to solve real-world problems through software.
+                </p>
+
+            </div>
+
         </div>
+
     </section>
 
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
     <section id="skills">
-        <h2 class="section-title">Skills</h2>
-       <div class="skills-grid">
 
-    <div class="skill-item">
-        <i class="fa-brands fa-html5"></i>
-        <p>HTML5</p>
-    </div>
+        <h2 class="section-title">
+            Skills
+        </h2>
 
-    <div class="skill-item">
-        <i class="fa-brands fa-css3-alt"></i>
-        <p>CSS3</p>
-    </div>
+        <div class="skills-grid">
 
-    <div class="skill-item">
-        <i class="fa-brands fa-js"></i>
-        <p>JavaScript</p>
-    </div>
 
-    <div class="skill-item">
-        <i class="fa-brands fa-python"></i>
-        <p>Python</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-brands fa-node-js"></i>
-        <p>Node.js</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-brands fa-figma"></i>
-        <p>Figma</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-solid fa-database"></i>
-        <p>MySQL</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-solid fa-mobile-screen"></i>
-        <p>Flutter</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-solid fa-code"></i>
-        <p>C / C++</p>
-    </div>
-
-    <div class="skill-item">
-        <i class="fa-solid fa-brain"></i>
-        <p>Machine Learning</p>
-    </div>
-
-</div>
-    </section>
-     <section id="projects">
-    <h2 class="section-title">My Projects</h2>
-
-    <div class="services-container">
-
-        <div class="service-card highlight">
-            <h3>BD Tech Tailoring</h3>
-            <p>Admin dashboard and CMS interface designed for logistics management and promotional content management.</p>
-            <p><strong>Tech:</strong> HTML, CSS, JavaScript, Figma</p>
-        </div>
-
-        <div class="service-card">
-            <h3>MoviePass</h3>
-            <p>A movie ticket booking application UI focused on creating a simple and user-friendly booking experience.</p>
-            <p><strong>Tech:</strong> UI/UX, Figma</p>
-        </div>
-
-        <div class="service-card highlight">
-            <h3>Fruite</h3>
-            <p>A dynamic fruit beverage landing page designed with a modern and engaging visual interface.</p>
-            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        </div>
-
-        <div class="service-card">
-            <h3>TasteWise</h3>
-            <p>Restaurant web application and navigation UI kit designed to provide a smooth food discovery experience.</p>
-            <p><strong>Tech:</strong> UI/UX, Figma, Web Design</p>
-        </div>
-
-        <div class="service-card highlight">
-            <h3>Flutter Tracking App</h3>
-            <p>A tracking application featuring authentication, media, calendar, profile, and data management functionality.</p>
-            <p><strong>Tech:</strong> Flutter, Dart, SQLite</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Personal Data Analysis</h3>
-            <p>Machine learning research project analyzing awareness of personal data selling on social media platforms.</p>
-            <p><strong>Tech:</strong> Python, Machine Learning, Data Analysis</p>
-        </div>
-</section>   
-<section id="experience">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="timeline">
-
-        <div class="timeline-container left">
-            <div class="timeline-content">
-                <h3>2026 - Present</h3>
-                <p><strong>Product Ambassador / Part-time Intern</strong></p>
-                <p>Clever Creator Bangladesh</p>
-                <p>Supporting product awareness and user engagement while gaining professional experience in a technology-focused environment.</p>
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
             </div>
+
+
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <p>Python</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-brands fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-brands fa-figma"></i>
+                <p>Figma</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <p>MySQL</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <p>Flutter</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <p>C / C++</p>
+            </div>
+
+
+            <div class="skill-item">
+                <i class="fa-solid fa-brain"></i>
+                <p>Machine Learning</p>
+            </div>
+
         </div>
 
-    </div>
-</section>
-        <section id="research">
-    <h2 class="section-title">Research</h2>
+    </section>
 
-    <div class="service-card highlight">
-        <h3>An Analysis of Personal Data Selling on Social Media Platforms</h3>
 
-        <p>
-            A research project exploring user awareness, personal data collection,
-            targeted advertising, privacy concerns, and digital literacy across
-            major social media platforms.
-        </p>
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+    <section id="projects">
 
-        <p>
-            <strong>Focus:</strong> Machine Learning, Data Analysis, Social Media Privacy
-        </p>
+        <h2 class="section-title">
+            My Projects
+        </h2>
 
-        <p>
-            <strong>Status:</strong> Research Paper in Progress
-        </p>
-    </div>
-</section>
+        <div class="services-container">
 
-    <section id="education">
-        <h2 class="section-title">My Education</h2>
+
+            <!-- Project 1 -->
+            <div class="service-card highlight">
+
+                <h3>
+                    BD Tech Tailoring
+                </h3>
+
+                <p>
+                    Admin dashboard and CMS interface designed for logistics
+                    management and promotional content management.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    HTML, CSS, JavaScript, Figma
+                </p>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="service-card">
+
+                <h3>
+                    MoviePass
+                </h3>
+
+                <p>
+                    A movie ticket booking application UI focused on creating
+                    a simple and user-friendly booking experience.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    UI/UX, Figma
+                </p>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="service-card highlight">
+
+                <h3>
+                    Fruite
+                </h3>
+
+                <p>
+                    A dynamic fruit beverage landing page designed with
+                    a modern and engaging visual interface.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="service-card">
+
+                <h3>
+                    TasteWise
+                </h3>
+
+                <p>
+                    Restaurant web application and navigation UI kit designed
+                    to provide a smooth food discovery experience.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    UI/UX, Figma, Web Design
+                </p>
+
+            </div>
+
+
+            <!-- Project 5 -->
+            <div class="service-card highlight">
+
+                <h3>
+                    Flutter Tracking App
+                </h3>
+
+                <p>
+                    A tracking application featuring authentication, media,
+                    calendar, profile, and data management functionality.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    Flutter, Dart, SQLite
+                </p>
+
+            </div>
+
+
+            <!-- Project 6 -->
+            <div class="service-card">
+
+                <h3>
+                    Personal Data Analysis
+                </h3>
+
+                <p>
+                    Machine learning research project analyzing awareness
+                    of personal data selling on social media platforms.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong>
+                    Python, Machine Learning, Data Analysis
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE SECTION
+    ========================== -->
+    <section id="experience">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
         <div class="timeline">
+
             <div class="timeline-container left">
+
                 <div class="timeline-content">
-                    <h3>2011 - 2019</h3>
-                    <p>Bogura Govt. Girls' High School</p>
-                    <p>Science</p>
+
+                    <h3>
+                        2026 - Present
+                    </h3>
+
+                    <p>
+                        <strong>
+                            Product Ambassador — Part-time Intern
+                        </strong>
+                    </p>
+
+                    <p>
+                        Clever Creator Bangladesh
+                    </p>
+
+                    <p>
+                        Supporting product awareness and user engagement
+                        while gaining professional experience in a
+                        technology-focused environment.
+                    </p>
+
                 </div>
+
             </div>
-            <div class="timeline-container right">
-                <div class="timeline-content">
-                    <h3>2019 - 2021</h3>
-                    <p>Govt. Azizul Haque College</p>
-                    <p>GPA 5.00</p>
-                </div>
-            </div>
-            <div class="timeline-container left">
-                <div class="timeline-content">
-                    <h3>2022 - 2026</h3>
-                    <p>Daffodil International University</p>
-                    <p>Bachelor's in CSE</p>
-                </div>
-            </div>
+
         </div>
+
     </section>
 
+
+    <!-- =========================
+         RESEARCH SECTION
+    ========================== -->
+    <section id="research">
+
+        <h2 class="section-title">
+            Research
+        </h2>
+
+        <div class="service-card highlight">
+
+            <h3>
+                An Analysis of Personal Data Selling on Social Media Platforms
+            </h3>
+
+            <p>
+                A research project exploring user awareness, personal data
+                collection, targeted advertising, privacy concerns, and
+                digital literacy across major social media platforms.
+            </p>
+
+            <p>
+                <strong>Focus:</strong>
+                Machine Learning, Data Analysis, Social Media Privacy
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                Research Paper in Progress
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION SECTION
+    ========================== -->
+    <section id="education">
+
+        <h2 class="section-title">
+            My Education
+        </h2>
+
+        <div class="timeline">
+
+
+            <!-- School -->
+            <div class="timeline-container left">
+
+                <div class="timeline-content">
+
+                    <h3>
+                        2011 - 2019
+                    </h3>
+
+                    <p>
+                        Bogura Govt. Girls' High School
+                    </p>
+
+                    <p>
+                        Science
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- College -->
+            <div class="timeline-container right">
+
+                <div class="timeline-content">
+
+                    <h3>
+                        2019 - 2021
+                    </h3>
+
+                    <p>
+                        Govt. Azizul Haque College
+                    </p>
+
+                    <p>
+                        GPA 5.00
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- University -->
+            <div class="timeline-container left">
+
+                <div class="timeline-content">
+
+                    <h3>
+                        2022 - 2026
+                    </h3>
+
+                    <p>
+                        Daffodil International University
+                    </p>
+
+                    <p>
+                        B.Sc. in Computer Science & Engineering
+                    </p>
+
+                    <p>
+                        CGPA: 3.49 / 4.00
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
     <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
         <form class="contact-form" id="portfolioContactForm">
+
+
             <div class="form-group">
-                <input type="text" placeholder="Full Name" required>
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
             </div>
+
+
             <div class="form-group">
-                <input type="email" placeholder="Email Address" required>
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
             </div>
+
+
             <div class="form-group">
-                <input type="text" placeholder="Subject">
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                >
+
             </div>
+
+
             <div class="form-group">
-                <textarea rows="6" placeholder="Your Message" required></textarea>
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
             </div>
+
+
             <div style="text-align: center;">
-                <button type="submit" class="btn">Send Message</button>
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Send Message
+                </button>
+
             </div>
+
         </form>
+
     </section>
 
-<footer>
-    <p>&copy; 2026 Saba. All Rights Reserved.</p>
-</footer>
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Saba. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
