@@ -24,7 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- TYPING / SUBHEADING TEXT ROTATION EFFECT ---
-    const roles = ["Web Developer", "Youtuber", "UI/UX Designer"];
+    const roles = [
+    "Software Developer",
+    "Frontend Developer",
+    "UI/UX Designer",
+    "AI/ML Enthusiast"
+];
     let roleIndex = 0;
     const textElement = document.getElementById("changingText");
 
